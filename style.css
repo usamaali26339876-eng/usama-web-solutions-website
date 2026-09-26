@@ -1,0 +1,247 @@
+* =========================
+   GENERAL STYLING
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f5f7fa;
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+    background-color: #1f2937;
+    padding: 20px;
+    text-align: center;
+}
+
+nav h2 {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #60a5fa;
+}
+
+
+/* =========================
+   HOME
+========================= */
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #f5f7fa;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #1f2937;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.hero button {
+    background-color: #1f2937;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.hero button:hover {
+    background-color: #374151;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+    background-color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.about h2 {
+    color: #1f2937;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #555;
+}
+
+
+/* =========================
+   SERVICES
+========================= */
+
+#services {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#services h2 {
+    color: #1f2937;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    max-width: 1100px;
+    margin: 40px auto 0;
+}
+
+.service-box {
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    flex: 1;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.service-box:hover {
+    transform: translateY(-5px);
+}
+
+.service-box h3 {
+    color: #1f2937;
+    margin-bottom: 12px;
+    font-size: 21px;
+}
+
+.service-box p {
+    color: #666;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+#contact {
+    background-color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+#contact h2 {
+    color: #1f2937;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+#contact p {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+#contact a {
+    color: #1f2937;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    color: #2563eb;
+    text-decoration: underline;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    nav h2 {
+        font-size: 22px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero {
+        padding: 70px 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .services-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .service-box {
+        width: 100%;
+    }
+}
